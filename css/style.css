@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form label{
+    display:block;
+}
+form{
+    background-color: rgba(83, 6, 102, 0.657);
+    color:white;
+}
