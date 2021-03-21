@@ -14,13 +14,45 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form" action="index.html" method="post">
-      <label for="name">Name</label>
+      <label id="name-label" for="name">Name</label>
       <input id="name" type="text" name="user-name" value="" placeholder="Enter your name">
-      <label for="email">Email</label>
+      <br>
+      <label id="email-label" for="email">Email</label>
       <input id="email" type="email" name="email" value="" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"‏>
-      <label for="age">Age (optional)</label>
+      <br>
+      <label id="number-label" for="age">Age (optional)</label>
       <input id="age" type="number" name="age" value="" placeholder="Age" pattern="[0-9]"‏ min="10" step="1" max ="99"‏>
-      <button>Send</button>
+      <br>
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" name="">
+        <option value="Select current role" selected disabled class="text-secondary" placeholder>Select current role</option>
+        <option value="">Student</option>
+        <option value="">Full time Job</option>
+        <option value="">Full time learner</option>
+        <option value="">Prefer not to say</option>
+        <option value="">Other</option>
+      </select>
+      <br>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <br>
+      <input id="Definitely" type="radio" name="recommend" value="Definitely" checked>
+      <label for="Definitely">Definitely</label>
+      <input id="maybe" type="radio" name="recommend" value="maybe" >
+      <label for="maybe">Maybe</label>
+      <input id="not-sure" type="radio" name="recommend" value="not-sure" >
+      <label for="not-sure">Not sure</label>
+      <br>
+      <label for="dropdown2">What is your favorite feature of freeCodeCamp?</label>
+      <select id="dropdown2" name="">
+        <option value="Select current role" selected disabled class="text-secondary" placeholder>Select an option</option>
+        <option value="">Student</option>
+        <option value="">Challenges</option>
+        <option value="">Projects</option>
+        <option value="">Community</option>
+        <option value="">Open Source</option>
+      </select>
+      <br>
+      <input type="submit">
 
     </form>
 
